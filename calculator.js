@@ -11,11 +11,11 @@ let ans = false;
 
 const refresh = () => {
   if (buffer.length > 23) {
-    screen[1].innerText = buffer.substring(0, 23);
-    screen[0].innerText = buffer.substring(23);
+    screen[2].innerText = buffer.substring(0, 23);
+    screen[1].innerText = buffer.substring(23);
   } else {
-    screen[1].innerText = '';
-    screen[0].innerText = buffer;
+    screen[2].innerText = '';
+    screen[1].innerText = buffer;
   }
 }
 const clicked = tag => {
